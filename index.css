@@ -1,45 +1,55 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
 .het {
-    width: 496px;
-    float: right;
-    margin-right: 50px;
     font-family: 'Poppins', sans-serif;
+    width: 50%;
+    
+    
 
 }
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+   
+}
 h1 {
-    display: inline-block;
-    position: relative;
-    top: 100px;
-    left: 90px;
-    width: 496px;
+    
     font-family: 'PT Serif', serif;
     font-size: 36px;
 }
-.container1{
+.container{
         display: flex;
-        justify-content: space-evenly;
-}
-.container2{
-    display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: 4em;
+        margin-top: 2em;
+    
+
+        
 }
 .resim{
+    width:33%;
     position: relative;
-    top: 100px;
-    right: 50px;
+   
 }
 span {
     font-family: 'PT Serif', serif;
-    font-size: small;
-    position: absolute;
+    font-size: 12px;
     writing-mode: vertical-rl;
+    position: absolute;
     margin-left: 20px;
     top: 0;
 
 }
 img{
-    width: 300px;
-    border-radius: 5px;
-
+border-radius: 10px;
+width: 75%;
 }
 .resim p{
     font-weight: bold;
@@ -48,6 +58,21 @@ img{
     
 }
 .asagı{
-    position: relative;
     margin-top: 40px;
+}
+@media(max-width:768px){
+    .resim{
+        width:50%;
+        position: relative;
+    }
+    .het{
+        width: 70%;
+    }
+    header{
+        margin-top: -4px;
+    }
+    span{
+        font-size: 8px;
+        margin-left: -0.1em;
+    }
 }
